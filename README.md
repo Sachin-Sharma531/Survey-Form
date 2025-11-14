@@ -1,2 +1,2 @@
 # Survey-Form
-A Survey form that collects user information and rating built using HTML and CSS
+A Survey form that collects user information and feedback built using HTML and CSS
