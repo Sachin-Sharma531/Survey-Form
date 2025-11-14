@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Survey and Feedback Form</h1>
+
+  <form class="form" method="get">
+    <fieldset>
+      <legend>User Information</legend>
+      <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" placeholder="Full Name">
+      </div>
+
+      <div>
+        <label for="mail">E-Mail: </label>
+        <input id="mail" type="email" placeholder="abcd@gmail.com">
+      </div>
+
+      <div>
+        <label for="age">Enter Your Age: </label>
+        <input id="age" type="number">
+      </div>
+
+      <div>
+        <label>Gender</label>
+            <div class="radio-group">
+              <label for="male"><input type="radio" name="gender" id="male"> Male</label>
+              <label for="female"><input type="radio" name="gender" id="female"> Female</label>
+              <label for="other"><input type="radio" name="gender" id="other"> Other</label>
+            </div>
+      </div>
+          
+
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Ratings</legend>
+      <div class="rating-group">
+        <label><input type="radio" id="r1" name="rating">1</label>
+        <label><input type="radio" id="r2" name="rating">2</label>
+        <label><input type="radio" id="r3" name="rating">3</label>   
+        <label><input type="radio" id="r4" name="rating">4</label>
+        <label><input type="radio" id="r5" name="rating">5</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Experience</legend>
+
+      <p class="help">Select all that apply</p>
+        <div class="checkbox-grid">
+          <label class="check"><input type="checkbox" name="exp" value="interface">Easy to Navigate</label>
+          <label class="check"><input type="checkbox" name="exp" value="speed">Fast performance</label>
+          <label class="check"><input type="checkbox" name="exp" value="support">Helpful support</label>
+          <label class="check"><input type="checkbox" name="exp" value="features">Great features</label>
+          <label class="check"><input type="checkbox" name="exp" value="bugs">Encountered bugs</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback</legend>
+      <div>
+        <label for="feedback"><p>Give us your Feedback: </p></label>
+        <textarea id="feedback"></textarea>
+    </div>
+      
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
